@@ -1,0 +1,36 @@
+.seat-selection-container {
+  padding: 2rem;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.seats-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.seat {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #e0f2fe;
+}
+
+.seat:hover {
+  background-color: #93c5fd;
+}
+
+.confirm-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background: #38bdf8;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}

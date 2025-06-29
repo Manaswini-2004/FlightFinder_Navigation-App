@@ -1,0 +1,66 @@
+/* UserBookings.css */
+.user-bookings-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f5f9ff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.user-bookings-container h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 25px;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.bookings-table thead {
+  background-color: #003366;
+  color: #ffffff;
+}
+
+.bookings-table th,
+.bookings-table td {
+  padding: 14px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 16px;
+}
+
+.bookings-table tbody tr:nth-child(even) {
+  background-color: #e9f0fb;
+}
+
+.bookings-table tbody tr:hover {
+  background-color: #d0e4ff;
+  transition: 0.2s ease-in-out;
+}
+
+.back-btn {
+  margin-top: 30px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}

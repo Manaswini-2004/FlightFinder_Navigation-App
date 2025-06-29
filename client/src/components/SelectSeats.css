@@ -1,0 +1,90 @@
+/* SelectSeats.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.seat-selection-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/world-flight.jpg") no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+.seat-selection-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #111;
+}
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.legend .seat {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.seats-grid {
+  display: grid;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.economy {
+  grid-template-columns: repeat(6, 50px);
+}
+
+.business {
+  grid-template-columns: repeat(5, 60px);
+}
+
+.first-class {
+  grid-template-columns: repeat(4, 70px);
+}
+
+.seat {
+  background-color: #d1d5db;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.seat.selected {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.seat.booked {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.seat.available {
+  background-color: #a7f3d0;
+}
+
+.confirm-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background-color: #34d399;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

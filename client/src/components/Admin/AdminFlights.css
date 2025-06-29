@@ -1,0 +1,75 @@
+.admin-flights-container {
+  padding: 20px;
+  background-color: #eef3f9;
+  min-height: 100vh;
+}
+
+.admin-flights-title {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.flights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.flight-card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.flight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.flight-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.flight-card p {
+  margin: 4px 0;
+  color: #444;
+}
+.flight-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.flight-form input,
+.flight-form button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #388e3c;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}

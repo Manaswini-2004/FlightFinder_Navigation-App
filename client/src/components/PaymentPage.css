@@ -1,0 +1,71 @@
+/* Full-screen background image */
+body {
+  background: url("/public/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Optional overlay to darken the background slightly for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3); /* dark overlay */
+  z-index: -1;
+}
+
+/* Payment container card */
+.payment-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+}
+
+/* Heading */
+.payment-container h2 {
+  margin-bottom: 1.5rem;
+  color: #222;
+  text-align: center;
+}
+
+/* Payment details */
+.payment-details p {
+  margin: 0.6rem 0;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Pay button */
+.pay-btn {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #45a049;
+}
+.success-message {
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
